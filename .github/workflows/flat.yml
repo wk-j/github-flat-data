@@ -1,12 +1,14 @@
 name: data
-on:
-  schedule:
-    - cron: 0 * * * *
-  workflow_dispatch: {}
-  push:
-    paths:
-      - .github/workflows/flat.yml
-      - ./query.sql
+
+# on:
+#   schedule:
+#     - cron: 0 * * * *
+#   workflow_dispatch: {}
+#   push:
+#     paths:
+#       - .github/workflows/flat.yml
+#       - ./query.sql
+
 jobs:
   scheduled:
     runs-on: ubuntu-latest
